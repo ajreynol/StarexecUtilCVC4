@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --bv-div-zero-const $1

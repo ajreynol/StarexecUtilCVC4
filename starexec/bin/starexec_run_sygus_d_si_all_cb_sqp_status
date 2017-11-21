@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --lang=sygus --default-dag-thresh=0 --sygus-out=status --cegqi-si=all --cbqi-bv --sygus-qe-preproc $1

@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --full-saturate-quant --macros-quant --macros-quant-mode=ground-uf $1
