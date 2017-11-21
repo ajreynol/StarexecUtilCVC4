@@ -1,10 +1,14 @@
 #!/bin/bash
 
 if [ X$1 = X'-p' ]; then
-  NAME = $2-cvc4
+  NAME=$2-cvc4
+  shift
+  shift
 else
-  NAME = cvc4
+  NAME=cvc4
 fi
+
+echo "Make starexec package from executable $NAME"
 
 # Run : mk_starexec [TEXT] 
 # Run from directory containing cvc4 binary and subdirectory starexec/ containing the starexec space, i.e. subdirectory bin/ with configuration files.
