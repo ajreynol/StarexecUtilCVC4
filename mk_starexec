@@ -9,6 +9,7 @@ else
 fi
 
 echo "Make starexec package from executable $NAME"
+$NAME --show-config | grep scm
 
 # Run : mk_starexec [TEXT] 
 # Run from directory containing cvc4 binary and subdirectory starexec/ containing the starexec space, i.e. subdirectory bin/ with configuration files.
