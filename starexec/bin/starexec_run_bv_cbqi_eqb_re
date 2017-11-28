@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --cbqi-bv --bv-div-zero-const --cbqi-bv-ineq=eq-boundary --cbqi-bv-rm-extract $1
