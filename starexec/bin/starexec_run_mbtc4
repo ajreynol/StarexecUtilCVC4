@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --full-saturate-quant --model-based-tc --model-based-tc-mode=4 $1
