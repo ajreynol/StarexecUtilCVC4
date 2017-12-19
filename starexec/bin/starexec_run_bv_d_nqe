@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --no-cbqi-bv --bv-div-zero-const --cbqi-nested-qe $1
