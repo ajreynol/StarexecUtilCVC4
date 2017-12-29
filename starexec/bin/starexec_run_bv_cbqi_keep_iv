@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --cbqi-bv --bv-div-zero-const --cbqi-bv-interleave-value --cbqi-bv-ineq=keep $1
