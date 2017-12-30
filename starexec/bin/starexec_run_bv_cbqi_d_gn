@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --no-cbqi-bv --bv-div-zero-const --cbqi-global-negate $1
+./cvc4 --no-cbqi-bv --bv-div-zero-const --global-negate $1

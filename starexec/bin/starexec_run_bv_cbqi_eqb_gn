@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --cbqi-bv-ineq=eq-boundary --cbqi-global-negate $1
+./cvc4 --cbqi-bv-ineq=eq-boundary --global-negate $1
