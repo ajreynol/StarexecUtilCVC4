@@ -24,7 +24,7 @@ function finishwith {
 }
 
 
-trywith 30 --cbqi-global-negate --cbqi-bv-ineq=keep
+trywith 30 --global-negate --cbqi-bv-ineq=keep
 finishwith --cbqi-bv-ineq=keep
 
 esac

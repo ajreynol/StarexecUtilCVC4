@@ -24,7 +24,7 @@ function finishwith {
 }
 
 
-trywith 30 --cbqi-global-negate --cbqi-bv-ineq=eq-slack --cbqi-nested-qe
+trywith 30 --global-negate --cbqi-bv-ineq=eq-slack --cbqi-nested-qe
 finishwith --cbqi-bv-ineq=eq-slack --cbqi-nested-qe
 
 esac
