@@ -24,8 +24,8 @@ function finishwith {
 }
 
 
-trywith 30 --global-negate --no-cbqi-bv --cbqi-nested-qe
-finishwith --no-cbqi-bv --cbqi-nested-qe
+trywith 30 --global-negate --no-cond-rewrite-quant --no-cbqi-bv --cbqi-nested-qe
+finishwith --no-cond-rewrite-quant --no-cbqi-bv --cbqi-nested-qe
 
 esac
 

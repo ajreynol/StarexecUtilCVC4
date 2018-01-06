@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --cbqi-bv-ineq=eq-slack $1
+./cvc4 --no-cond-rewrite-quant --cbqi-bv-ineq=eq-slack $1
