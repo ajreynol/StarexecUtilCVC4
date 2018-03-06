@@ -1,0 +1,80 @@
+# SMT COMP
+--simplification=none --full-saturate-quant
+--no-e-matching --full-saturate-quant
+--fs-interleave --decision=internal --full-saturate-quant
+--relevant-triggers --full-saturate-quant
+--trigger-sel=max --full-saturate-quant
+--multi-trigger-when-single --full-saturate-quant
+--multi-trigger-when-single --multi-trigger-priority --full-saturate-quant
+--multi-trigger-cache --full-saturate-quant
+--no-multi-trigger-linear --full-saturate-quant
+--pre-skolem-quant --full-saturate-quant
+--inst-when=full --full-saturate-quant
+--no-e-matching --no-quant-cf --full-saturate-quant
+--nl-ext --full-saturate-quant
+--full-saturate-quant --quant-ind
+--decision=internal --simplification=none --no-inst-no-entail --no-quant-cf --full-saturate-quant
+--finite-model-find --mbqi=none
+--finite-model-find
+--finite-model-find --uf-ss=no-minimal
+--finite-model-find --fmf-inst-engine
+--decision=internal --full-saturate-quant
+--term-db-mode=relevant --full-saturate-quant
+--fs-interleave --full-saturate-quant
+--finite-model-find --decision=internal
+--finite-model-find --fmf-bound-int
+--finite-model-find --sort-inference
+--full-saturate-quant
+
+# LRA/LIA
+--full-saturate-quant
+--full-saturate-quant --cbqi-midpoint
+--full-saturate-quant --cbqi-nested-qe
+--full-saturate-quant --cbqi --cbqi-nested-qe --decision=internal
+--full-saturate-quant --cbqi-no-innermost
+--full-saturate-quant --cbqi-no-innermost --global-negate
+
+# BV
+--full-saturate-quant
+--full-saturate-quant --no-cbqi
+--full-saturate-quant --cbqi --decision=internal
+
+
+
+# remove
+--inst-prop --full-saturate-quant
+--quant-ee --full-saturate-quant
+--finite-model-find --uf-ss-sym-break --sort-inference --uf-ss-fair
+--finite-model-find --uf-ss-deq-prop --sort-inference --uf-ss-fair
+--inst-rlv-cond --full-saturate-quant
+
+
+#FNT
+--finite-model-find --fmf-inst-engine --sort-inference --uf-ss-fair
+--finite-model-find --uf-ss=no-minimal --sort-inference --uf-ss-fair
+--finite-model-find --decision=internal --sort-inference --uf-ss-fair
+--finite-model-find --macros-quant --macros-quant-mode=all --sort-inference --uf-ss-fair
+
+#FOF
+--relational-triggers --full-saturate-quant 
+--no-e-matching --full-saturate-quant 
+--finite-model-find --uf-ss=no-minimal
+--multi-trigger-when-single --full-saturate-quant 
+--trigger-sel=max --full-saturate-quant
+--multi-trigger-when-single --multi-trigger-priority --full-saturate-quant  
+--multi-trigger-cache --full-saturate-quant
+--prenex-quant=none --full-saturate-quant
+--fs-inst --decision=internal --full-saturate-quant
+--relevant-triggers --full-saturate-quant 
+--finite-model-find --fmf-inst-engine --sort-inference --uf-ss-fair
+--decision=internal --full-saturate-quant
+--qcf-vo-exp --full-saturate-quant
+--no-quant-cf --full-saturate-quant 
+--macros-quant --macros-quant-mode=all --full-saturate-quant
+
+#TFA
+--finite-model-find --decision=internal
+--multi-trigger-when-single --multi-trigger-priority --nl-ext-tplanes --full-saturate-quant
+--no-e-matching --full-saturate-quant 
+--cbqi-all --purify-triggers --full-saturate-quant 
+--macros-quant --macros-quant-mode=all --nl-ext-tplanes --full-saturate-quant
