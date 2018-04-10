@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --lang=sygus --sygus-repair-const --no-sygus-add-const-grammar --default-dag-thresh=0 $1
+./cvc4 --lang=sygus --sygus-repair-const --no-sygus-add-const-grammar --default-dag-thresh=0 --produce-models $1
