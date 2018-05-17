@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --pre-skolem-quant --full-saturate-quant $1

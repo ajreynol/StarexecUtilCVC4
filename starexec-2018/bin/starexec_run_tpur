@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --cbqi-all --purify-triggers --full-saturate-quant  $1

@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --no-cond-rewrite-quant --no-cbqi-bv  --global-negate --no-cbqi-innermost --ext-rew-prep $1

@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --relevant-triggers --full-saturate-quant $1

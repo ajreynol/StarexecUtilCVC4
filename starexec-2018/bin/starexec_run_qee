@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --quant-ee --full-saturate-quant $1

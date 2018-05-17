@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --decision=internal --simplification=none --no-inst-no-entail --no-quant-cf --full-saturate-quant $1

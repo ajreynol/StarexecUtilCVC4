@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --prenex-quant=none --full-saturate-quant $1

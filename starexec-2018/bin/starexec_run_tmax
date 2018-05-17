@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --trigger-sel=max --full-saturate-quant $1
