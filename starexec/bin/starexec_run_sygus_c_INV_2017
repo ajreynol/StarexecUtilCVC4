@@ -29,5 +29,5 @@ function finishwith {
   esac)
 }
 
-trywith 30 
-finishwith --sygus-unif
+trywith 60 --sygus-inv-templ=pre
+finishwith --sygus-inv-templ=post
