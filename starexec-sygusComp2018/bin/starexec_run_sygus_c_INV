@@ -32,6 +32,6 @@ function finishwith {
   esac)
 }
 
-trywith 120 --cegqi-si=all --cegqi-si-abort --decision=internal --cbqi --cbqi-prereg-inst
-trywith 5 --cegqi-si=none --sygus-crepair-abort
-finishwith --cegqi-si=none --no-sygus-repair-const
+trywith 10
+trywith 120 --sygus-unif
+finishwith --no-sygus-repair-const
