@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --strings-exp --rewrite-divk --lang=smt2.6.1 --strings-fmf $1
+./cvc4 --strings-exp --rewrite-divk --force-logic="ALL_SUPPORTED" --strings-fmf $1
