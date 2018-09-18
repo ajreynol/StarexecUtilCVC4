@@ -15,7 +15,7 @@ $NAME --show-config | grep scm
 # Run from directory containing cvc4 binary and subdirectory starexec/ containing the starexec space, i.e. subdirectory bin/ with configuration files.
 # Generates file cvc4-[TEXT].tgz that can be uploaded to starexec.
 strip ~/bin/$NAME
-cp ~/bin/$NAME ~/bin/cvc4-$1
+cp ~/bin/$NAME /local/ajreynol/binaries/cvc4-$1
 cp ~/bin/$NAME ./starexec/bin/cvc4
 cd starexec
 tar -czf ../cvc4-$1.tgz .
