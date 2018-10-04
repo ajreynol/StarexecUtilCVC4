@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --lang=sygus --default-dag-thresh=0 --sygus-unif $1
+./cvc4 --lang=sygus --default-dag-thresh=0 --sygus-out=status-or-def --sygus-unif $1
