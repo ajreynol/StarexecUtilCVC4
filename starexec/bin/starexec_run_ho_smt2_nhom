@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --uf-ho --full-saturate-quant --lang=smt2 --no-ho-matching $1

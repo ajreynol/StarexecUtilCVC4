@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --lang=sygus --default-dag-thresh=0 --sygus-fair=direct $1

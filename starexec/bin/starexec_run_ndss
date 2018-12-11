@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --no-dt-share-sel $1
