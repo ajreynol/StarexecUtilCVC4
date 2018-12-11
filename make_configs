@@ -2,12 +2,12 @@
 for i in {1..14}
   do 
     echo "$i:"
-    sed "${i}q;d" options.txt > temp.txt
-    RESULT=$(cat temp.txt | sed 's/ .*//')
+    sed "${i}q;d" $1 > temp.txt
+    RESULT=$(cat temp.txt | sed 's/,.*//')
     echo "result is $RESULT"
     echo "#!/bin/bash" > starexec_run_$RESULT
     echo "./cvc4" > temp2.txt
-    cat temp.txt | sed 's/.* / /' >> temp2.txt
+    cat temp.txt | sed 's/.*,/ /' >> temp2.txt
     echo " \$1" >> temp2.txt
     tr -d '\n' < temp2.txt >> starexec_run_$RESULT
     echo >> starexec_run_$RESULT
