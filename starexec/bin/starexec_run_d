@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --sygus-active-gen=none $1
+./cvc4 --full-saturate-quant $1
