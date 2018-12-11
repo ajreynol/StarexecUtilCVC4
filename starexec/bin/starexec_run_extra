@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --ext-rew-prep --ext-rew-prep-agg --full-saturate-quant $1

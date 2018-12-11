@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --full-saturate-quant --inst-when=last-call $1
