@@ -10,11 +10,10 @@
 #
 # generates starexec_run_default with run command ./cvc4 --full-saturate $1.
 
-NUMCONFIGS=$(wc -l $1)
-echo "Generating starexec configurations for $NUMCONFIGS configurations..."
+NUMCONFIGS=$(wc -l $1 | sed 's/ .*//')
+echo "Generating starexec configurations for ${NUMCONFIGS} configurations..."
 
-for i in {1..$NUMCONFIGS}
-  do 
+for ((i=1; i<=NUMCONFIGS; i++)); do
     echo "$i:"
     sed "${i}q;d" $1 > temp.txt
     RESULT=$(cat temp.txt | sed 's/,.*//')
