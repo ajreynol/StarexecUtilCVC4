@@ -1,5 +1,19 @@
 #!/bin/bash
-for i in {1..14}
+
+# Expects $1 file of the form:
+#
+# [config_name] [options]
+#
+# For example, the line in $1:
+#
+#   default --full-saturate-quant
+#
+# generates starexec_run_default with run command ./cvc4 --full-saturate $1.
+
+NUMCONFIGS=$(wc -l $1)
+echo "Generating starexec configurations for $NUMCONFIGS configurations..."
+
+for i in {1..$NUMCONFIGS}
   do 
     echo "$i:"
     sed "${i}q;d" $1 > temp.txt

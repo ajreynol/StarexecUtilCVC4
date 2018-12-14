@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BIN_DIR=starexec-cav19
+
 if [ X$1 = X'-p' ]; then
   NAME=$2-cvc4
   shift
@@ -8,15 +10,24 @@ else
   NAME=cvc4
 fi
 
-echo "Make starexec package from executable $NAME"
+echo "*** Make starexec package from executable $NAME"
 $NAME --show-config | grep scm
 
 # Run : mk_starexec [TEXT] 
 # Run from directory containing cvc4 binary and subdirectory starexec/ containing the starexec space, i.e. subdirectory bin/ with configuration files.
 # Generates file cvc4-[TEXT].tgz that can be uploaded to starexec.
 strip ~/bin/$NAME
+rm -rf starexec
+cp -r $BIN_DIR starexec
 cp ~/bin/$NAME ~/bin/cvc4-$1
-cp ~/bin/$NAME ./starexec/bin/cvc4
 cd starexec
+echo "*** Using configure directory $BIN_DIR:"
+cd bin
+ls
+cd ..
+cp ~/bin/$NAME ./bin/cvc4
 tar -czf ../cvc4-$1.tgz .
 rm ./bin/cvc4
+cd ..
+echo "*** Finished."
+rm -rf starexec
