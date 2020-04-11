@@ -94,13 +94,41 @@ int main( int argc, char* argv[] )
   std::map< int, benchmark * > benchs;
   int nbench = 0;
   int nconfig = 0;
+  
+  std::map< std::string, std::map< std::string, std::string > > table;
 
   std::fstream fs(argv[1], std::ios::in);
   //std::cout << "Open file : " << argv[1] << std::endl;
+  
 
-  std::string hd;
-  getline( fs, hd );
+  std::string l;
+  std::vector< std::string > lines;
+  while( !fs.eof() ){
+    getline( fs, l );
+    lines.push_back(l);
+  }
+  
+  
+  for( unsigned i=0; i<lines.size(); i++ )
+  {
+    l = lines[i];
+    size_t pos = 0;
+    size_t pos_prev = 0;
+    pos = l.find(",", pos);
+    std::string slv = l.substr( pos_prev, pos-pos_prev );
+    pos_prev = pos;
+    pos = l.find(",", pos);
+    std::string bench = l.substr( pos_prev, pos-pos_prev );
+    std::string rest = l.substr(pos,l.size()-pos);
+    
+    std::cout << "Process line : " << l << std::endl;
+    std::cout << "  slv:" << slv << std::endl;
+    std::cout << "  bench:" << bench << std::endl;
+    std::cout << "  rest:" << rest << std::endl;
+  }
+  
   size_t pos = 0;
+  
   size_t pos_prev = 0;
   std::vector< std::string > hd_vec;
   while((pos = hd.find(",", pos)) != std::string::npos){

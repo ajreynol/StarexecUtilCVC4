@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BIN_DIR=starexec-qcf-exp
+BIN_DIR=starexec-main
 
 if [ X$1 = X'-p' ]; then
   NAME=$2-cvc4
