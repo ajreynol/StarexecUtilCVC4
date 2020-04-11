@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --full-saturate-quant --no-e-matching --nl-ext-tplanes $1

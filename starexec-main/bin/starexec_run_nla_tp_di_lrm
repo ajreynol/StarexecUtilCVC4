@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --nl-ext --nl-ext-tplanes --decision=internal --nl-ext-lin-repair-model $1
