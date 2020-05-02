@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --strings-exp --rewrite-divk --lang=smt2.6.1 --strings-fmf --check-models $1
+./cvc4 --strings-exp --rewrite-divk --strings-fmf --check-models $1
