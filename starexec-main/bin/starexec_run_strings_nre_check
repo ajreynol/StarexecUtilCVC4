@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --strings-exp --rewrite-divk --check-models --no-re-elim $1

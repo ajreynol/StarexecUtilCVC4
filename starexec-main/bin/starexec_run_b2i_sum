@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --solve-bv-as-int=sum $1
