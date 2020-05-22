@@ -28,16 +28,16 @@
 
 # LRA/LIA
 --full-saturate-quant
---full-saturate-quant --cbqi-midpoint
---full-saturate-quant --cbqi-nested-qe
---full-saturate-quant --cbqi --cbqi-nested-qe --decision=internal
---full-saturate-quant --cbqi-no-innermost
---full-saturate-quant --cbqi-no-innermost --global-negate
+--full-saturate-quant --cegqi-midpoint
+--full-saturate-quant --cegqi-nested-qe
+--full-saturate-quant --cegqi --cegqi-nested-qe --decision=internal
+--full-saturate-quant --cegqi-no-innermost
+--full-saturate-quant --cegqi-no-innermost --global-negate
 
 # BV
 --full-saturate-quant
---full-saturate-quant --no-cbqi
---full-saturate-quant --cbqi --decision=internal
+--full-saturate-quant --no-cegqi
+--full-saturate-quant --cegqi --decision=internal
 
 
 
@@ -76,5 +76,5 @@
 --finite-model-find --decision=internal
 --multi-trigger-when-single --multi-trigger-priority --nl-ext-tplanes --full-saturate-quant
 --no-e-matching --full-saturate-quant 
---cbqi-all --purify-triggers --full-saturate-quant 
+--cegqi-all --purify-triggers --full-saturate-quant 
 --macros-quant --macros-quant-mode=all --nl-ext-tplanes --full-saturate-quant

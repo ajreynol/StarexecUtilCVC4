@@ -29,7 +29,7 @@ function finishwith {
   $cvc4 --lang=tptp --no-checking --no-interactive --force-logic="UFNIRA" --dump-instantiations --inst-format=szs --force-no-limit-cpu-while-dump "$@" $bench
 }
 
-trywith 15 --cbqi-all --purify-triggers --full-saturate-quant 
+trywith 15 --cegqi-all --purify-triggers --full-saturate-quant 
 trywith 15 --decision=internal --simplification=none --no-inst-no-entail --no-quant-cf --full-saturate-quant
 trywith 15 --finite-model-find --decision=internal
 trywith 15 --no-e-matching --full-saturate-quant 

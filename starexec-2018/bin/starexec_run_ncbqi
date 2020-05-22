@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --full-saturate-quant --no-cbqi $1
+./cvc4 --full-saturate-quant --no-cegqi $1

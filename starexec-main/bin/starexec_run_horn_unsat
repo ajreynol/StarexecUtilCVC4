@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --cbqi-all $1
+./cvc4 --cegqi-all $1

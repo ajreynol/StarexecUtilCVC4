@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --full-saturate-quant --cbqi --cbqi-nested-qe --decision=internal $1
+./cvc4 --full-saturate-quant --cegqi --cegqi-nested-qe --decision=internal $1

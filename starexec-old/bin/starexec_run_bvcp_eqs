@@ -24,8 +24,8 @@ function finishwith {
 }
 
 
-trywith 30 --global-negate --no-cond-rewrite-quant --cbqi-bv-ineq=eq-slack
-finishwith --no-cond-rewrite-quant --cbqi-bv-ineq=eq-slack
+trywith 30 --global-negate --no-cond-rewrite-quant --cegqi-bv-ineq=eq-slack
+finishwith --no-cond-rewrite-quant --cegqi-bv-ineq=eq-slack
 
 esac
 

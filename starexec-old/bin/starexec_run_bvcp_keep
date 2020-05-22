@@ -24,8 +24,8 @@ function finishwith {
 }
 
 
-trywith 30 --global-negate --no-cond-rewrite-quant --cbqi-bv-ineq=keep
-finishwith --no-cond-rewrite-quant --cbqi-bv-ineq=keep
+trywith 30 --global-negate --no-cond-rewrite-quant --cegqi-bv-ineq=keep
+finishwith --no-cond-rewrite-quant --cegqi-bv-ineq=keep
 
 esac
 

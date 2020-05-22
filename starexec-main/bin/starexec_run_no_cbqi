@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --no-cbqi $1
+./cvc4 --no-cegqi $1

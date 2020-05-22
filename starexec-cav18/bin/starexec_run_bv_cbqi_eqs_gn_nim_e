@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --no-cond-rewrite-quant --cbqi-bv-ineq=eq-slack --global-negate --no-cbqi-innermost --ext-rew-prep $1
+./cvc4 --no-cond-rewrite-quant --cegqi-bv-ineq=eq-slack --global-negate --no-cegqi-innermost --ext-rew-prep $1

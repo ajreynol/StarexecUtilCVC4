@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --no-cond-rewrite-quant --cbqi-bv-ineq=eq-boundary --cbqi-nested-qe $1
+./cvc4 --no-cond-rewrite-quant --cegqi-bv-ineq=eq-boundary --cegqi-nested-qe $1
