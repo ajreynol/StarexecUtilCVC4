@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --nl-ext $1
+./cvc4 --nl-ext --decision=internal $1
