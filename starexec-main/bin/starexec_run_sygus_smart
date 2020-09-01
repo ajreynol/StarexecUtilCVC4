@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --lang=sygus2 --dag-thresh=0 --sygus-out=status --sygus-active-gen=none $1
