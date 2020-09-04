@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --strings-exp --rewrite-divk --check-models --no-strings-lazy-pp $1
+./cvc4 --strings-exp --check-models --no-strings-lazy-pp $1
