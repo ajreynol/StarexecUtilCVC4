@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --simplification=none --full-saturate-quant $1

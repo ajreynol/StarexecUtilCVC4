@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --full-saturate-quant --no-e-matching --sort-inference $1

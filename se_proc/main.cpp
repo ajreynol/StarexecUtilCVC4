@@ -95,19 +95,20 @@ int main( int argc, char* argv[] )
   int nbench = 0;
   int nconfig = 0;
   
-  std::map< std::string, std::map< std::string, std::string > > table;
+  //std::map< std::string, std::map< std::string, std::string > > table;
 
   std::fstream fs(argv[1], std::ios::in);
   //std::cout << "Open file : " << argv[1] << std::endl;
   
-
+  std::string hd;
+  getline( fs, hd );
+  /*
   std::string l;
   std::vector< std::string > lines;
   while( !fs.eof() ){
     getline( fs, l );
     lines.push_back(l);
   }
-  
   
   for( unsigned i=0; i<lines.size(); i++ )
   {
@@ -126,9 +127,9 @@ int main( int argc, char* argv[] )
     std::cout << "  bench:" << bench << std::endl;
     std::cout << "  rest:" << rest << std::endl;
   }
+  */
   
   size_t pos = 0;
-  
   size_t pos_prev = 0;
   std::vector< std::string > hd_vec;
   while((pos = hd.find(",", pos)) != std::string::npos){
@@ -254,6 +255,7 @@ int main( int argc, char* argv[] )
 
   std::cout << "Print output header..." << std::endl;
 
+  bool useSample = false;   // TODO
   std::stringstream sso;
   sso << argv[1] << ".out.csv";
   std::fstream fso(sso.str().c_str(), std::ios::out);
@@ -289,23 +291,26 @@ int main( int argc, char* argv[] )
   std::map< benchmark *, int > bcounter;
   unsigned nunique = 0;
   unsigned ntotal = 0;
-  for( std::map< int, benchmark * >::iterator it = benchs.begin(); it != benchs.end(); ++it ){
-    ntotal++;
-    if( proc.find( it->first )==proc.end() ){
-      int bbc = 1;
-      nunique++;
-      fsp << it->second->name << std::endl;
-      std::map< int, benchmark * >::iterator it2 = it;
-      it2++;
-      for( ; it2 != benchs.end(); ++it2 ){
-        if( proc.find( it2->first )==proc.end() ){
-          if( it->second->compare( it2->second, .1 ) ){
-            proc[it2->first] = true;
-            bbc++;
+  if (useSample)
+  {
+    for( std::map< int, benchmark * >::iterator it = benchs.begin(); it != benchs.end(); ++it ){
+      ntotal++;
+      if( proc.find( it->first )==proc.end() ){
+        int bbc = 1;
+        nunique++;
+        fsp << it->second->name << std::endl;
+        std::map< int, benchmark * >::iterator it2 = it;
+        it2++;
+        for( ; it2 != benchs.end(); ++it2 ){
+          if( proc.find( it2->first )==proc.end() ){
+            if( it->second->compare( it2->second, .1 ) ){
+              proc[it2->first] = true;
+              bbc++;
+            }
           }
         }
+        bcounter[it->second] = bbc;
       }
-      bcounter[it->second] = bbc;
     }
   }
   fsp.close();
@@ -319,11 +324,15 @@ int main( int argc, char* argv[] )
   std::map< int, std::map< config *, std::map< config *, std::vector< benchmark * > > > > solved_by_unique;
 
   for( std::map< int, benchmark * >::iterator it = benchs.begin(); it != benchs.end(); ++it ){
-    int in_sample = bcounter.find( it->second )!=bcounter.end() ? bcounter[it->second] : -1;
-    fso << it->second->name;
-    if( in_sample>0 ){
-      fsos << it->second->name << "," << in_sample;
+    int in_sample = 0;
+    if (useSample)
+    {
+      in_sample = bcounter.find( it->second )!=bcounter.end() ? bcounter[it->second] : -1;
+      if( in_sample>0 ){
+        fsos << it->second->name << "," << in_sample;
+      }
     }
+    fso << it->second->name;
     if( it->second->res.size()!=nconfig ){
       std::cout << "Benchmark " << it->second->name << " has ";
       std::cout << it->second->res.size() << " results, nconfig=" << nconfig << std::endl;

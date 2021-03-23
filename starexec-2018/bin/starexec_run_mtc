@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --multi-trigger-cache --full-saturate-quant $1

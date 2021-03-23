@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --finite-model-find --no-dt-share-sel $1

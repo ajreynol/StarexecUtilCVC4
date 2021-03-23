@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --finite-model-find --uf-ss-sym-break --sort-inference --uf-ss-fair $1

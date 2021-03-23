@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --decision=internal --strings-exp $1

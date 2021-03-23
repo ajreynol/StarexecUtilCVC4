@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --lang=sygus --default-dag-thresh=0 --dt-compress-sel $1

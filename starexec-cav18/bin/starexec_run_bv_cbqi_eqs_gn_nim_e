@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --no-cond-rewrite-quant --cegqi-bv-ineq=eq-slack --global-negate --no-cegqi-innermost --ext-rew-prep $1

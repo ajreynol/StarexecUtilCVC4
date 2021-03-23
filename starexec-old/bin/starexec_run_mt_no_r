@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --full-saturate-quant --model-based-tc --no-model-based-tc-rlv $1

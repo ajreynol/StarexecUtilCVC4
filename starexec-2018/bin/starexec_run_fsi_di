@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --fs-interleave --decision=internal --full-saturate-quant $1

@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --decision=justification --strings-exp $1

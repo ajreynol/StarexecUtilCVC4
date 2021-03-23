@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --arith-eq-solver $1

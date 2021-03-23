@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --lang=sygus --default-dag-thresh=0 --sygus-repair-const --decision=justification --sygus-out=status-or-def $1

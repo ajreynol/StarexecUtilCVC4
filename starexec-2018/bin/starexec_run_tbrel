@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --term-db-mode=relevant --full-saturate-quant $1

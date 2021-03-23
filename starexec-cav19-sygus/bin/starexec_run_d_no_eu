@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --cegqi-si=none --sygus-active-gen=none --no-sygus-eval-unfold $1

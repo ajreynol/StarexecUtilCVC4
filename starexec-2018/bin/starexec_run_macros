@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --macros-quant --macros-quant-mode=all --full-saturate-quant $1

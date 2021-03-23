@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --nl-ext --nl-ext-tplanes --decision=internal --nl-ext-restrict=connected $1

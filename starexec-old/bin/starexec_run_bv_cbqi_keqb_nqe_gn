@@ -1,2 +1,0 @@
-#!/bin/bash
-./cvc4 --no-cond-rewrite-quant --cegqi-bv-ineq=keep-eqb --cegqi-nested-qe --global-negate $1
