@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 -q -i --lang smt2 --pre-skolem-quant --no-dt-share-sel --no-quant-cf --strings-exp --strings-seq-update=lazy $1

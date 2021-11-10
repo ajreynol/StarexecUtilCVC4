@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 -q -i --lang=smt2 --term-db-mode=relevant --no-quant-cf $1

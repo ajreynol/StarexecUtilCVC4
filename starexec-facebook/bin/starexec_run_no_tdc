@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 -q -i --lang=smt2 --no-term-db-cd $1

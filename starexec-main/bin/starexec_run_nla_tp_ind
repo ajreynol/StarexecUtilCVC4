@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --nl-ext --nl-ext-tplanes --decision=justification --quant-ind --int-wf-ind $1

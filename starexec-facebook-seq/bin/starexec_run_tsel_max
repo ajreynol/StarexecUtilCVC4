@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 -q -i --lang=smt2 --strings-exp --trigger-sel=max $1
