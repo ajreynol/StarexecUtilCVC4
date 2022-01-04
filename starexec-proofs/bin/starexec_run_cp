@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 --check-proofs $1

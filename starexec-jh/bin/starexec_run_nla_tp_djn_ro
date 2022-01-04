@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc4 --nl-ext --nl-ext-tplanes --decision=justification --jh-new --jh-new-rlv-order $1

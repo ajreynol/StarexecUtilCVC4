@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 --full-saturate-quant --nl-ext-tplanes --decision=justification --jh-rlv-order $1

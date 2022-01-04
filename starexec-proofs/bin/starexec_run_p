@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 --produce-proofs $1
