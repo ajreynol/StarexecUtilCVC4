@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --lang=sygus --dag-thresh=0 --sygus-out=status-or-def --sygus-active-gen=var-agnostic $1
+./cvc5 --lang=sygus --dag-thresh=0 --sygus-out=status-or-def --sygus-active-gen=var-agnostic $1

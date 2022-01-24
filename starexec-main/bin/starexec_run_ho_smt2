@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --uf-ho --full-saturate-quant --lang=smt2 $1
+./cvc5 --uf-ho --full-saturate-quant --lang=smt2 $1

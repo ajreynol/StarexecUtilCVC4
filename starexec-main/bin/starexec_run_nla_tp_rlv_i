@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --nl-ext --nl-ext-tplanes --decision=justification --relevance-filter  --nl-rlv=interleave $1
+./cvc5 --nl-ext --nl-ext-tplanes --decision=justification --relevance-filter  --nl-rlv=interleave $1

@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --strings-exp --strings-eager-slv=full $1
+./cvc5 --strings-exp --strings-eager-slv=full $1

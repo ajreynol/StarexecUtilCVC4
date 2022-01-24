@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --no-e-matching --full-saturate-quant --fs-sum $1
+./cvc5 --no-e-matching --full-saturate-quant --fs-sum $1

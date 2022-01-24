@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --finite-model-find --uf-ss=no-minimal $1
+./cvc5 --finite-model-find --uf-ss=no-minimal $1

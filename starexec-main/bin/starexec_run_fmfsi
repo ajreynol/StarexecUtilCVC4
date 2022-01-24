@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --finite-model-find --sort-inference --fmf-inst-engine $1
+./cvc5 --finite-model-find --sort-inference --fmf-inst-engine $1

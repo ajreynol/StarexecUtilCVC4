@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --nl-ext --nl-ext-tplanes --decision=internal --nl-ext-restrict=terms $1
+./cvc5 --nl-ext --nl-ext-tplanes --decision=internal --nl-ext-restrict=terms $1

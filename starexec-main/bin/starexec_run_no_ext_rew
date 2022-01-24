@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --full-saturate-quant --no-ext-rewrite-quant $1
+./cvc5 --full-saturate-quant --no-ext-rewrite-quant $1

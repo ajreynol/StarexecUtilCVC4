@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --strings-exp --jh-new $1
+./cvc5 --strings-exp --jh-new $1

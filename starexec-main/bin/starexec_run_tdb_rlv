@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --full-saturate-quant --term-db-mode=relevant $1
+./cvc5 --full-saturate-quant --term-db-mode=relevant $1
