@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 $1 --ite-simp --decision=internal
+./cvc5 $1 --ite-simp --decision=internal

@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --strings-exp --force-logic="ALL_SUPPORTED" --strings-deq-ext $1
+./cvc5 --strings-exp --force-logic="ALL_SUPPORTED" --strings-deq-ext $1

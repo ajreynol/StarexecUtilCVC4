@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --decision=internal --sat-rlv=all --strings-exp $1
+./cvc5 --decision=internal --sat-rlv=all --strings-exp $1

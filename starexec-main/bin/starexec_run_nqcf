@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --full-saturate-quant --no-quant-cf $1
+./cvc5 --full-saturate-quant --no-quant-cf $1

@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc4 --solve-bv-as-int=iand --iand-mode=bitwise $1
+./cvc5 --solve-bv-as-int=iand --iand-mode=bitwise $1
