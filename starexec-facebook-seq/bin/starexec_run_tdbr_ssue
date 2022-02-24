@@ -1,2 +1,2 @@
 #!/bin/bash
-./cvc5 -q -i --lang smt2 --term-db-mode=relevant --strings-exp --strings-seq-update=eager $1
+./cvc5 -q -i --lang smt2 --term-db-mode=relevant --strings-exp --seq-array=eager $1
