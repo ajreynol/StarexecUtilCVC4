@@ -1,0 +1,2 @@
+#!/bin/bash
+./cvc5 --full-saturate-quant --deep-restart $1
